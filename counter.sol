@@ -16,4 +16,10 @@ contract counter{
     function reset() external{
         ctr=0;
     }
+    /*Default Values
+    bool public b; //Booleans are false by default
+    uint public u; //Unsigned Integers are 0 by default
+    int public i; //Signed Integers are 0 by default
+    address public a; //Addresses use the 0 address by default (40 zeroes 0x0000000000000000000000000000000000000000)
+    bytes32 public b32; //Bytes32 uses a similar variant of the 0 address (64 zeroes 0x0000000000000000000000000000000000000000000000000000000000000000)*/
 }
