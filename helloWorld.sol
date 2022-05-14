@@ -8,7 +8,7 @@ Therefore, the contract won't compile if those keywords are thrown into any of t
 This happens because the '=' operand changes the state of a variable (which happens to be a state variable in this case)
 */
 
-contract helloWorld{
+contract counter{
     uint public ctr = 0;
     function increment() external returns (uint){
         return ctr+=1;
