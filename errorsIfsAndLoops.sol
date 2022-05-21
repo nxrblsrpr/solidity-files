@@ -33,17 +33,17 @@ contract randomTings{
         if(q<0){
             continue; //When placed in a loop, this will skip an iteration as of the point it is encountered in runtime
         }else if(q==9){
-            break; //Breaks out of the loop entirely, you know this shit man
+            break; //Breaks out of the loop entirely, you know this man
         }
         q++;
         }
         while(baw < 6){//Basic while loop syntax
             return sq(q);
         }
-        /*In other languages, loop duration is not a big deal; however you're coding in solidty now bitch
-        Remember that this shit costs gas, the longer the loop goes on, the more gas the contract will need to execute*/
+        /*In other languages, loop duration is not a big deal; however you're coding in solidty now
+        Remember that this stuff costs gas, the longer the loop goes on, the more gas the contract will need to execute*/
     }
-    /*Error checking and shit like that
+    /*Error checking and stuff like that
     When an error is thrown, gas will be refunded and any state changes will be reverted
     Custom errors should be prioritized whrn possible; the long the error message (in other error checks), the more gas is used*/
         function req(uint g) public pure{
@@ -57,7 +57,7 @@ contract randomTings{
                 revert("g>=10");//Optimal to use particularly in nested if statements
             }
         }
-        function ass() external view{
+        function asser() external view{
             assert(q==0);//Throws an error if the specified check is not met. 
             //The typical use for this is to see if you perhaps changed something that was meant to be kept the same. 
             //"Use 'assert' to check for conditions that should always be equal to true"
