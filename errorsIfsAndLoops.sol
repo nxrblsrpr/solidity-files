@@ -71,8 +71,9 @@ contract randomTings{
         }
     /*You may notice that the functions have an assortment of initialization keywords:
     'external' means that the function can be called from an external contract, whether that be another contract within this .sol file or on the blockchain
-    'internal' means that the function can only be called from within this contract
-    'public' means that the function can be called by other functions
+    'internal' means that the function can only be called from within this contract and from child contracts
+    'public' means that the function can be called by other functions inside the contract, outside the contract, and by children
+    'private' means that the function can be called within the original contract
     'pure' means that the function is read-only, not making changes to any states and does not accept input from outside the scope of the function
     'view' means that the function is read-only, not making changes to any states but it does accept input from outside of the scope of the function*/
 }
