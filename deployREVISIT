@@ -20,7 +20,7 @@ contract dos{//Just initializes some values?
 contract tres{//The point of this is to allow for the deployment of any specified contract via params
     event Deploy(address);
 
-    fallback() external payable{}
+    fallback() external payable{}//The keyword 'payable' adds functionality to send & receive ETH
 
     function deploy(bytes memory _code)external payable returns(address addr){
         //new <contract name>(); <--This would be the syntax to deploy any existing contract (such as 'uno' or 'dos')
