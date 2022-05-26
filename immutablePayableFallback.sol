@@ -49,5 +49,5 @@ receive() exists?      fallback()
       /       \
 receive()      fallback()
 
-If 'receive()' exists & 'msg.data' is not empty, receive will be executed
+If 'receive()' exists & 'msg.data' is not empty, 'receive()' will be executed
 !!!A contract can receive 0 ETH upon execution; internalize it that a contract always receives an amount of ETH*/
